@@ -1,1 +1,1 @@
-Image Gallery for SA interview
+Image Gallery for interview
