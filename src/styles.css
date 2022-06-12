@@ -6,6 +6,7 @@ body {
   --btn-txt-color: white;
   --btn-bg-color: rgb(11, 88, 160);
   --bkg-hd-color: teal;
+  --bkg-h1-display: block;
 }
 body.dark-theme {
   --text-color: #eee;
@@ -13,13 +14,23 @@ body.dark-theme {
   --btn-txt-color: rgb(46, 43, 43);
   --btn-bg-color: rgb(20, 211, 195);
   --bkg-hd-color: red;
+  --bkg-h1-display: none;
 }
 
 body {
   background: var(--bkg-color);
 }
 
-h1,
+h1 {
+  color: var(--text-color);
+  display: none;
+}
+
+h1.dark-theme {
+  color: var(--text-color);
+  display: block;
+}
+
 p {
   color: var(--text-color);
 }

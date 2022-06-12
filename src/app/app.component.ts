@@ -12,6 +12,9 @@ export class AppComponent {
 
   toggleDarkTheme(): void {
     document.body.classList.toggle('dark-theme');
+    document
+      .querySelectorAll('h1')
+      .forEach((i) => i.classList.toggle('dark-theme'));
   }
 
   constructor() {
